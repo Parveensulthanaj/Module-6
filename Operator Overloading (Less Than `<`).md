@@ -4,7 +4,6 @@
 
 To write a Python program that demonstrates **operator overloading** by overloading the **less than (`<`)** operator using a custom class.
 
----
 
 ## 🧠 ALGORITHM
 
@@ -22,10 +21,24 @@ To write a Python program that demonstrates **operator overloading** by overload
 4. **Use `<` Operator**:
    - Use `print(ob1 < ob2)` to trigger the overloaded behavior.
 
----
+
 
 ## 💻 Program
+```class A:
+    def __init__(self, a):
+        self.a = a
+    def __lt__(self, other):
+        if(self.a<other.a):
+            return "ob1 is less than ob2"
+        else:
+            return "ob2 is less than ob1"
+ob1 = A(20)
+ob2 = A(3)
+print(ob1 < ob2)
+```
 
 ## Output
+<img width="1112" height="200" alt="pp6 4" src="https://github.com/user-attachments/assets/e28830c7-6f5f-458a-a8a4-114d2bb78caa" />
 
 ## Result
+Thus , the program has been executed successfully.
